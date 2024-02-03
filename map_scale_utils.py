@@ -1,4 +1,4 @@
-def get_scale_params(object_longitude, object_latitude, delta="0.005"):
+def get_scale_params(object_longitude, object_latitude, delta='0.005'):
     spn = ",".join([delta, delta])
     ll = f"{object_longitude},{object_latitude}"
-    return {"ll": ll, "spn": spn}
+    return {"ll": ll, "spn": spn, 'pt': f'{object_longitude},{object_latitude}'}
